@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fafafa;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/dino.png);
+    position: absolute;
+    bottom: 0px;
+}
+
+.cacto{
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/cactus.png);
+    position: absolute;
+    bottom: 0px;
+}
+
+.game-over{
+    margin-top: 180px;
+    text-align: center;
+    color: red;
+}
+
+.fundo{
+    position: absolute;
+    bottom: 0px;
+    background-image: url(./images/background.png);
+    background-repeat: repeat-x;
+    animation: moveFundo 600s infinite linear;
+    -webkit-animation: moveFundo 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+@keyframes moveFundo{
+    from{
+        background-position: 100000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
